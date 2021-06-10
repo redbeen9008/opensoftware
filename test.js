@@ -10,3 +10,6 @@ function crt2DArr(rows, columns) {
     }
     return arr;
 }
+function input_data(arr,rows) {
+    
+}
