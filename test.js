@@ -5,6 +5,9 @@ listarr[0]=["날짜","벤치프레스","스쿼트","데드리프트","합계"];
 listarr[1]=["06-01",100,200,200,500];
 listarr[2]=["06-02",200,300,400,900];
 search_data(listarr,900);
+listarr[1]=["1-1",0,0,0,0];
+delete_data(listarr,"1-1");
+console.log(listarr);
 
 
 function crt2DArr(rows, columns) {
@@ -23,6 +26,13 @@ function search_data(arr,val){
     for(var i=0; i<4;i++){
         if(arr[i][4]>=val){
             console.log(arr[i]);
+        }
+    }
+}
+function delete_data(arr,date_val){
+    for(var i =0;i<4;i++){
+        if(arr[i][0]==date_val){
+            arr[i]=new Array(5);
         }
     }
 }
