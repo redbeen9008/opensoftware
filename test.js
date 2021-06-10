@@ -1,5 +1,5 @@
 console.log("3대 운동 기록 측정 프로그램");
-
+var listarr= new crt2DArr(4,4);
 
 
 
